@@ -73,9 +73,9 @@ Gain full-stack development experience
 
 ✅ Day 2: Signup & Login APIs
 
-🔜 Day 3: Frontend integration
+✅ Day 3: Frontend integration
 
-🔜 Day 4: Dashboard & session handling
+✅ Day 4: Dashboard & session handling
 
 🔜 Day 5: AI Chat integration
 
