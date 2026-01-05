@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Tutor | StudyGenei AI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/chat.css">
+</head>
+<body>
+
+<!-- ===== CHAT NAVBAR ===== -->
+<nav class="chat-navbar">
+  <h2>🤖 StudyGenei AI Tutor</h2>
+  <button onclick="goDashboard()" class="back-btn">← Dashboard</button>
+</nav>
+
+<!-- ===== CHAT CONTAINER ===== -->
+<section class="chat-container">
+
+  <!-- Messages -->
+  <div class="chat-box" id="chatBox">
+    <div class="message ai">
+      👋 Hi! I’m your AI Tutor. Ask me anything you want to learn.
+    </div>
+  </div>
+
+  <!-- Input -->
+  <div class="chat-input">
+    <input
+      type="text"
+      id="userInput"
+      placeholder="Ask a question..."
+      autocomplete="off"
+    />
+    <button id="sendBtn" onclick="sendMessage()">Send</button>
+  </div>
+
+</section>
+
+
+<script src="js/chat.js"></script>
+
+</body>
+</html>

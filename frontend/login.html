@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login | StudyGenie AI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+<div class="login-container">
+  <div class="login-card">
+    <h2>🔐 Welcome Back</h2>
+    <p class="subtitle">Login to <b>StudyGenie AI</b></p>
+
+    <!-- Email -->
+    <input type="email" id="email" placeholder="📧 Email" required>
+
+    <!-- Password -->
+    <input type="password" id="password" placeholder="🔑 Password" required>
+
+    <!-- Login button -->
+    <button class="primary-btn" onclick="login()">Login</button>
+
+    <p class="switch">
+      Don't have an account?
+      <a href="signup.html">Sign Up</a>
+    </p>
+  </div>
+</div>
+
+<!-- ✅ IMPORTANT: normal script (NO module) -->
+<script src="js/auth.js"></script>
+
+</body>
+</html>

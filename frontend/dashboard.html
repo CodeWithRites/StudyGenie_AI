@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard | StudyGenei AI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+<!-- ===== DASHBOARD NAVBAR ===== -->
+<nav class="dash-navbar">
+  <h2>📘 StudyGenei AI</h2>
+
+  <div class="nav-actions">
+    <button class="profile-btn" onclick="openProfile()">👤 Profile</button>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </div>
+</nav>
+
+<!-- ===== PROFILE MODAL ===== -->
+<div class="profile-modal" id="profileModal">
+  <div class="profile-card">
+    <h2>👤 My Profile</h2>
+
+    <p><strong>Email:</strong> <span id="profileEmail"></span></p>
+    <p><strong>University:</strong> <span id="profileUniversity"></span></p>
+    <p><strong>Phone:</strong> <span id="profilePhone"></span></p>
+
+    <button class="close-btn" onclick="closeProfile()">Close</button>
+  </div>
+</div>
+
+<!-- ===== MAIN DASHBOARD ===== -->
+<section class="dashboard">
+
+  <!-- Welcome -->
+  <div class="welcome-box">
+    <h1 id="welcomeText">Welcome 👋</h1>
+    <p>Ready to continue your smart learning journey?</p>
+  </div>
+
+  <!-- Action Cards -->
+  <div class="action-cards">
+
+    <div class="action-card gradient-blue" onclick="goUpload()">
+      <h3>📄 Upload Notes</h3>
+      <p>Upload PDFs and get instant AI summaries.</p>
+    </div>
+
+    <div class="action-card gradient-purple" onclick="goChat()">
+      <h3>💬 AI Tutor</h3>
+      <p>Ask doubts anytime and get simple explanations.</p>
+    </div>
+
+    <div class="action-card gradient-gray disabled">
+      <h3>📚 My Summaries</h3>
+      <p>View all your saved summaries (Coming Soon).</p>
+    </div>
+
+  </div>
+
+</section>
+
+<script src="js/auth.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

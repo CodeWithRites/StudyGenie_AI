@@ -1,0 +1,189 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ================= BODY ================= */
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 60px;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+  background: rgba(0,0,0,0.15);
+  z-index: 100;
+}
+
+.logo {
+  font-size: 26px;
+}
+
+.nav-links a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #00e5ff;
+}
+
+.btn {
+  background: #00e5ff;
+  padding: 8px 18px;
+  border-radius: 20px;
+  color: black !important;
+}
+
+/* ================= HERO ================= */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 50px;
+  background: linear-gradient(90deg, #ffffff, #00e5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 720px;
+  margin: auto;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.hero-buttons {
+  margin-top: 35px;
+}
+
+.primary, .secondary {
+  padding: 14px 28px;
+  margin: 10px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.primary {
+  background: #00e5ff;
+  color: black;
+}
+
+.primary:hover {
+  background: #00c8e0;
+  transform: scale(1.05);
+}
+
+.secondary {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.secondary:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* ================= FEATURES ================= */
+.features {
+  padding: 100px 8%;
+}
+
+.features-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.features-header h2 {
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+.features-header p {
+  font-size: 18px;
+  color: #cfd8dc;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 35px;
+}
+
+.feature-card {
+  background: rgba(255,255,255,0.08);
+  padding: 35px 30px;
+  border-radius: 22px;
+  text-align: center;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(10px);
+}
+
+.feature-card h3 {
+  font-size: 22px;
+  margin-bottom: 14px;
+}
+
+.feature-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #e0f2f1;
+}
+
+.feature-card:hover {
+  transform: translateY(-12px);
+  background: rgba(0,229,255,0.15);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.35);
+}
+
+/* ================= DEMO ================= */
+.demo {
+  padding: 100px 10%;
+  text-align: center;
+}
+
+.demo h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.demo p {
+  font-size: 18px;
+  color: #cfd8dc;
+}
+
+.demo-video-container video {
+  width: 85%;
+  max-width: 850px;
+  margin-top: 40px;
+  border-radius: 20px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.45);
+}
+
+/* ================= FOOTER ================= */
+footer {
+  text-align: center;
+  padding: 25px;
+  background: rgba(0,0,0,0.2);
+  margin-top: 80px;
+  opacity: 0.8;
+}

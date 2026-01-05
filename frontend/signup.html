@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Account | StudyGenie AI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+<div class="login-container">
+  <div class="login-card">
+    <h2>🚀 Create Account</h2>
+    <p class="subtitle">Join <b>StudyGenie AI</b> and study smarter</p>
+
+    <!-- Email -->
+    <input type="email" id="email" placeholder="📧 Email" required>
+
+    <!-- Password -->
+    <div class="password-box">
+      <input type="password" id="password" placeholder="🔑 Password (min 6 chars)" required>
+      <span class="toggle" onclick="togglePassword()"></span>
+    </div>
+
+    <!-- University -->
+    <input type="text" id="university" placeholder="🏫 University / College Name" required>
+
+    <!-- Phone -->
+    <input type="tel" id="phone" placeholder="📱 Phone Number (10 digits)" required>
+
+    <!-- Signup button -->
+    <button class="primary-btn" onclick="signup()">Create Account</button>
+
+    <p class="switch">
+      Already have an account?
+      <a href="login.html">Login</a>
+    </p>
+  </div>
+</div>
+
+<!-- ✅ IMPORTANT: normal script (NO module) -->
+<script src="js/auth.js"></script>
+
+<script>
+  function togglePassword() {
+    const pass = document.getElementById("password");
+    pass.type = pass.type === "password" ? "text" : "password";
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>StudyGenei AI | Your 24/7 AI Study Partner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+  <h2 class="logo">📘 StudyGenei AI</h2>
+  <div class="nav-links" id="navLinks"></div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <h1>Your 24/7 AI Study Partner</h1>
+  <p>
+    Upload notes • Get instant summaries • Ask doubts anytime •
+    Learn smarter with AI
+  </p>
+
+  <div class="hero-buttons">
+    <button class="primary" onclick="goSignup()">Get Started Free</button>
+    <button class="secondary" onclick="watchDemo()">Watch Demo</button>
+  </div>
+</section>
+
+<!-- ================= FEATURES ================= -->
+<section class="features" id="features">
+  <div class="features-header">
+    <h2>Why Choose StudyGenei AI?</h2>
+    <p>Built for students who want to learn faster and smarter.</p>
+  </div>
+
+  <div class="features-grid">
+    <div class="feature-card">
+      <h3>📄 Smart Summaries</h3>
+      <p>Upload PDFs or notes and get short, exam-focused summaries instantly.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>🤖 AI Tutor 24/7</h3>
+      <p>Ask doubts anytime and get clear explanations in simple language.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>🧠 Topic-wise Learning</h3>
+      <p>Break complex subjects into easy-to-understand topics.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>🌙 Dark Mode</h3>
+      <p>Study comfortably at night with eye-friendly dark mode.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>🎯 Exam Focused</h3>
+      <p>Designed especially for quick revision and exam preparation.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>🔐 Secure Accounts</h3>
+      <p>Your data is protected with secure login and personal dashboard.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>📊 Smart Progress Tracking</h3>
+      <p>Track completed topics and learning progress in one place.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>📚 Multi-Subject Support</h3>
+      <p>Engineering, Medical, Arts & Competitive exams — all supported.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DEMO ================= -->
+<section class="demo" id="demo">
+  <h2>Watch StudyGenei AI in Action</h2>
+  <p>See how StudyGenei helps you study smarter in seconds.</p>
+
+  <div class="demo-video-container">
+    <video id="demoVideo" controls>
+      <source src="assets/demo.mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <p>© 2025 StudyGenei AI | Built for Students 🚀</p>
+</footer>
+
+<!-- ================= SCRIPTS ================= -->
+<script src="js/auth.js"></script>
+
+<script>
+  function goSignup() {
+    window.location.href = "signup.html";
+  }
+
+  function goHome() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  function watchDemo() {
+    const demo = document.getElementById("demo");
+    const video = document.getElementById("demoVideo");
+    demo.scrollIntoView({ behavior: "smooth" });
+    setTimeout(() => video.play(), 600);
+  }
+
+  // Dynamic Navbar
+  const navLinks = document.getElementById("navLinks");
+  const user = localStorage.getItem("user");
+
+  if (user) {
+    navLinks.innerHTML = `
+      <a href="#" onclick="goHome()">Home</a>
+      <a href="#features">Features</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="#" onclick="logout()" class="btn">Logout</a>
+    `;
+  } else {
+    navLinks.innerHTML = `
+      <a href="#" onclick="goHome()">Home</a>
+      <a href="#features">Features</a>
+      <a href="login.html">Login</a>
+      <a href="signup.html" class="btn">Try Free</a>
+    `;
+  }
+</script>
+
+</body>
+</html>

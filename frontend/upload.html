@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload Notes | StudyGenei AI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/upload.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="upload-navbar">
+  <h2>📘 StudyGenei AI</h2>
+  <button onclick="goDashboard()" class="back-btn">← Back to Dashboard</button>
+</nav>
+
+<!-- ===== UPLOAD SECTION ===== -->
+<section class="upload-section">
+
+  <div class="upload-card">
+    <h1>📄 Upload Your Notes</h1>
+    <p class="subtitle">
+      Upload PDF notes and get AI-powered summaries (coming next 🚀)
+    </p>
+
+    <!-- Subject -->
+    <input type="text" id="subject" placeholder="📚 Subject Name (e.g. DBMS)" />
+
+    <!-- File Upload -->
+    <input type="file" id="fileInput" accept=".pdf" />
+
+    <!-- Upload Button -->
+    <button onclick="uploadNotes()" class="upload-btn">Upload Notes</button>
+
+    <!-- Status -->
+    <p id="statusText" class="status-text"></p>
+  </div>
+
+</section>
+
+<script src="js/auth.js"></script>
+<script src="js/upload.js"></script>
+
+</body>
+</html>
