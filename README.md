@@ -34,17 +34,11 @@ This project is being built step-by-step as part of learning full-stack developm
 
 🛠️ Tech Stack
 Frontend
-
 HTML
-
 CSS
-
 JavaScript
-
 Backend
-
 Node.js
-
 Express.js
 
 Database
