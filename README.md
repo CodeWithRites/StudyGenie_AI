@@ -1,67 +1,67 @@
-📘 StudyGenie – AI Study Buddy Website
+# 📘 StudyGenie – AI Study Buddy Website
 
 StudyGenie is an AI-powered study assistant website designed for students to learn smarter.
 It helps students with AI-based doubt solving, PDF summarization, and secure authentication using a modern Node.js + MySQL backend.
 
 This project is being built step-by-step as part of learning full-stack development and startup-level architecture.
 
-🚀 Features
+# 🚀 Features
 ✅ Completed
 
-🔐 User Signup & Login (Email, Password)
+- 🔐 User Signup & Login (Email, Password)
 
-🏫 Store University Name & Phone Number
+- 🏫 Store University Name & Phone Number
 
-🔒 Secure password hashing using bcrypt
+- 🔒 Secure password hashing using bcrypt
 
-🗄️ MySQL database integration
+- 🗄️ MySQL database integration
 
-🌐 REST APIs using Node.js & Express
+- 🌐 REST APIs using Node.js & Express
 
-🧱 Proper backend project structure
+- 🧱 Proper backend project structure
 
-🔜 Upcoming
+- 🔜 Upcoming
 
-🤖 AI Chat Tutor (OpenAI API)
+- 🤖 AI Chat Tutor (OpenAI API)
 
-📄 PDF Upload & AI Summarization
+- 📄 PDF Upload & AI Summarization
 
-🧑‍🎓 User Dashboard
+- 🧑‍🎓 User Dashboard
 
-🔐 JWT Authentication
+- 🔐 JWT Authentication
 
-🌍 Website Deployment
+- 🌍 Website Deployment
 
-🛠️ Tech Stack
-Frontend
-HTML
-CSS
-JavaScript
-Backend
-Node.js
-Express.js
+# 🛠️ Tech Stack
 
-Database
+ ## Frontend
+  - HTML
+  - CSS
+  - JavaScript
+### Backend
+  - Node.js
 
-MySQL
+#### Database
 
-Security
+  - MySQL
 
-bcryptjs (password hashing)
+## Security
 
-🎯 Learning Objectives
+  - bcryptjs (password hashing)
 
-Understand real-world backend architecture
+# 🎯 Learning Objectives
 
-Work with MySQL + Node.js
+- Understand real-world backend architecture
 
-Build secure authentication systems
+- Work with MySQL + Node.js
 
-Prepare for hackathons & startup projects
+- Build secure authentication systems
 
-Gain full-stack development experience
+- Prepare for hackathons & startup projects
 
-🧭 Development Roadmap
+- Gain full-stack development experience
+
+## 🧭 Development Roadmap
 
 ✅ Day 1: Backend & MySQL setup
 
@@ -77,7 +77,8 @@ Gain full-stack development experience
 
 🔜 Day 7: Testing & deployment
 
-👨‍💻 Author
+
+## 👨‍💻 Author
 
 Ritesh Gouda
 B.Tech CSE Student
