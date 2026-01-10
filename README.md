@@ -5,6 +5,7 @@ It helps students with AI-based doubt solving, PDF summarization, and secure aut
 
 This project is being built step-by-step as part of learning full-stack development and startup-level architecture.
 
+
 # 🚀 Features
 ✅ Completed
 
