@@ -14,7 +14,7 @@ This project is being built step-by-step as part of learning full-stack developm
 - 🏫 Store University Name & Phone Number
 
 - 🔒 Secure password hashing using bcrypt
-
+  
 - 🗄️ MySQL database integration
 
 - 🌐 REST APIs using Node.js & Express
